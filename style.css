@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #222;
+    background-color: #f2f4f7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/* Цвета и оформление шапки и подвала */
+.site-header,
+.site-footer {
+    color: #fff;
+    background-color: #6f9dcc;
+    border-color: #456f9c !important;
+}
+
+.site-header h1 {
+    color: #fff;
+}
+
+.site-header p {
+    color: #e8f1fb;
+}
+
+/* Логотип */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    color: #1f4168;
+    background-color: #b8d0ea;
+    border: 3px solid #456f9c;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #fff;
+    background-color: #456f9c;
+}
+
+/* Навигация */
+.site-header .nav-link {
+    color: #fff;
+    border-radius: 5px;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus {
+    color: #fff;
+    background-color: #456f9c;
+}
+
+/* Карточки секций */
+.content-card {
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #c4d0dc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    color: #315d89;
+    border-bottom: 2px solid #6f9dcc;
+    padding-bottom: 0.5rem;
+}
+
+/* Ссылки */
+#links a {
+    color: #245d99;
+}
+
+#links a:hover {
+    color: #b64040;
+}
+
+/* Таблица */
+.table {
+    --bs-table-bg: #fff;
+    --bs-table-striped-bg: #eaf2f9;
+    --bs-table-hover-bg: #d2e4f5;
+}
+
+.table caption {
+    color: #315d89;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.table thead th {
+    color: #fff;
+    background-color: #4d7eae;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table td {
+    text-align: center;
+}
+
+/* Форма */
+.form-label {
+    color: #315d89;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: #315d89;
+    box-shadow: 0 0 0 0.25rem rgba(111, 157, 204, 0.25);
+}
+
+.btn-primary {
+    background-color: #4d7eae;
+    border-color: #4d7eae;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #315d89;
+    border-color: #315d89;
+}
+
+/* На широком экране логотип немного больше */
+@media (min-width: 768px) {
+    .logo {
+        width: 105px;
+        height: 105px;
+    }
+}
